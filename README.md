@@ -15,17 +15,12 @@ Welcome to my FastAPI REST Template! This API is suitable for small applications
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/schlummer13/REST-Template
     ```
 
-2. Navigate to the project directory:
+2. Install the required packages:
     ```bash
-    cd <project-directory>
-    ```
-
-3. Install the required packages:
-    ```bash
-    pip install -r requirements.txt
+    pip install -r app/requirements.txt
     ```
 
 ## Usage
