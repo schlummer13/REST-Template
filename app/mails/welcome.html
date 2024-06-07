@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+<style>
+  /* Basic Styling Rules */
+  body, html, table, tbody, tr, td, div, p, span {
+  font-family: Arial, sans-serif;
+}
+
+/* Responsive Container */
+.email-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Content Block with Rounded Corners */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:-30px;
+  background: #ffffff; /* Content Background Color */
+  border-radius: 15px; /* Corner Radius */
+  padding: 20px; /* Content Padding */
+  border: 1px solid #cccccc; /* Border around Content */
+}
+
+/* Button Design */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: #ffffff; /* Text Color */
+    background-color: #007BFF; /* Background Color */
+    border-radius: 5px; /* Round Button Corners */
+    text-decoration: none; /* No Text Underline */
+    font-weight: bold; /* Bold Text */
+  }
+
+/* Media Queries for Different Screen Sizes */
+@media only screen and (max-width: 600px) {
+    .email-container {
+      width: 100% !important;
+    }
+  
+    .content {
+      padding: 10px !important;
+    }
+  
+    .button {
+      padding: 10px 15px; /* Smaller Padding on Smaller Screens */
+    }
+  }
+  
+</style>
+</head>
+<body>
+<table role="presentation" aria-hidden="true" cellspacing="0" cellpadding="0" border="0" align="center" class="email-container">
+  <tr>
+    <td class="content">
+      <p>Hello {{ name }},</p>
+      <p>Welcome to the URL!</p>
+
+      <p>We are excited to welcome you to the family.</p>
+      <p>Best regards,</p>
+      <p>The URL</p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
